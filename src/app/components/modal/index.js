@@ -39,7 +39,7 @@ export default function PostModal({ open, setOpen }) {
       >
         <div
           ref={modalRef}
-          className="flex-column absolute top-[50%] left-[50%] w-full max-w-[944px] bg-white p-[30px] text-black rounded-[20px] modal-conatiner"
+          className="flex-column absolute top-[50%] left-[50%] w-full max-w-[944px] bg-white p-[30px] text-black rounded-[20px] modal-conatiner max-h-[70vh] overflow-y-auto"
         >
           <div className="flex w-full">
             <div className="flex w-full gap-5 mb-9 flex-wrap">
