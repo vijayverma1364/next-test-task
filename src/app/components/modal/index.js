@@ -83,7 +83,10 @@ export default function PostModal({ open, setOpen }) {
               {mediaData?.length &&
                 mediaData?.map((item, index) => {
                   return (
-                    <div className="bg-[#F4F4F5] px-3 py-4 text-center rounded-[10px] min-w-[100px] min-h-[80px]">
+                    <div
+                      key={index}
+                      className="bg-[#F4F4F5] px-3 py-4 text-center rounded-[10px] min-w-[100px] min-h-[80px]"
+                    >
                       <Image
                         src={item?.icon}
                         alt="close icon"
