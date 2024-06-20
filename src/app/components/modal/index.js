@@ -33,13 +33,13 @@ export default function PostModal({ open, setOpen }) {
         id="default-modal"
         tabIndex="-1"
         aria-hidden="true"
-        className={`modal-wrapper overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full ${
+        className={`modal-wrapper overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[100%] max-h-full ${
           open ? "block" : "hidden"
         }`}
       >
         <div
           ref={modalRef}
-          className="flex-column absolute top-[50%] left-[50%] w-full max-w-[944px] bg-white p-[30px] text-black rounded-[20px] modal-conatiner max-h-[70vh] overflow-y-auto"
+          className="flex-column absolute top-[50%] left-[50%] w-full max-w-[944px] bg-white p-[30px] text-black rounded-[20px] modal-conatiner max-h-[70vh] md:max-h-full overflow-y-auto"
         >
           <div className="flex w-full">
             <div className="flex w-full gap-5 mb-9 flex-wrap">
