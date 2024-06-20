@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -18,16 +19,24 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: "Montserrat", sans-serif;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.close-icon {
+  box-shadow: 1.8px 1.8px 13.5px 0px #0000001a;
+}
+
+.modal-conatiner {
+  transform: translate(-50%, -50%);
+  box-shadow: 2px 2px 40px 0px #0000001a;
+}
+
+.modal-wrapper {
+  backdrop-filter: brightness(0.5);
 }
