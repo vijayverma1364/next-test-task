@@ -8,10 +8,10 @@ const MainPage = () => {
   const handleOpen = () => setOpen(true);
 
   return (
-    <div>
+    <div className="main-container">
       <div>
         <button
-          className="border border-solid border-[#EE2E12] bg-transparent px-12 py-4 rounded-[50px] text-base text-[#EE2E12]"
+          className="border border-solid border-[#EE2E12] bg-transparent px-12 py-4 rounded-[50px] text-base text-[#EE2E12] bg-[#ffeaea]"
           onClick={handleOpen}
         >
           Edit Profile

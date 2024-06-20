@@ -42,7 +42,7 @@ export default function PostModal({ open, setOpen }) {
           className="flex-column absolute top-[50%] left-[50%] w-full max-w-[944px] bg-white p-[30px] text-black rounded-[20px] modal-conatiner"
         >
           <div className="flex w-full">
-            <div className="flex w-full gap-5 mb-9">
+            <div className="flex w-full gap-5 mb-9 flex-wrap">
               <Image
                 src="/user-profile.svg"
                 alt="user profile Logo"
@@ -74,12 +74,12 @@ export default function PostModal({ open, setOpen }) {
             rows="4"
             name="comment"
             id="comment"
-            class="w-full min-h-[150px] border-b border-[#D7D7D7] text-[#8F8F90] text-xl font-medium focus-visible:border focus-visible:outline-none focus:border-[#D7D7D7]"
+            class="w-full min-h-[150px] border-b border-[#D7D7D7] text-[#8F8F90] text-xl font-medium focus-visible:border focus-visible:outline-none focus:border-[#D7D7D7]  focus-visible:p-5"
             placeholder=" What do you want to talk about?"
           ></textarea>
 
-          <div className="flex justify-between mt-[30px] items-center">
-            <div className="flex gap-[15px]">
+          <div className="flex justify-between mt-[30px] items-center flex-wrap gap-[10px]">
+            <div className="flex gap-[15px] flex-wrap">
               {mediaData?.length &&
                 mediaData?.map((item, index) => {
                   return (
